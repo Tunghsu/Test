@@ -1,6 +1,6 @@
 #coding=UTF-8
 # Django settings for Test project.
-
+ 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
