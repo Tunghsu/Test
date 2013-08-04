@@ -1,0 +1,15 @@
+<html><body>
+现在是： {{ now }}
+{% include 'home.html'%}
+{% if name = "" %}
+ aaa--
+{% else %}
+ 欢迎 {{ name }}
+{% endif %}
+  {% for athlete in athlete_list %}
+    <p>{{ forloop.counter }}: {{ athlete.name }}</p>
+ {% if not forloop.last %}, {% endif %}
+{% empty %}
+<p>暂时没有显示项。</p>
+{% endfor %}
+</body></html>      

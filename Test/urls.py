@@ -1,5 +1,6 @@
+# -*-coding:utf-8 -*-
 from django.conf.urls import patterns, include, url
-from Test.views import hello, current_datetime
+from Test.views import hello, current_datetime ,home
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
@@ -7,7 +8,7 @@ from Test.views import hello, current_datetime
 
 urlpatterns = patterns('',
             ('^hello/$', hello), 
-            ('^$', hello), 
+            ('^$', home), 
             ('^time/$', current_datetime),          
     # Examples:
     # url(r'^$', 'Test.views.home', name='home'),

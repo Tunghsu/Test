@@ -1,3 +1,4 @@
+#coding=UTF-8
 # Django settings for Test project.
 
 DEBUG = True
@@ -5,6 +6,7 @@ TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
+    ('Jane Lee', '410615903@qq.com'),
 )
 
 MANAGERS = ADMINS
@@ -12,10 +14,10 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': 'VIDEO',                      # Or path to database file if using sqlite3.
+        'NAME': 'dj',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'root',
-        'PASSWORD': 'CREATETABLE',
+        'PASSWORD': '410615903',
         'HOST': 'localhost',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '3306',                      # Set to empty string for default.
     }
@@ -111,6 +113,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    "./Test/templates"
 )
 
 INSTALLED_APPS = (
